@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Sweetheart.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#0a0a0a;
+    --text:#fafafa;
+    --muted:#8a8a8a;
+    --accent:#d4b996;
+    --border:rgba(255,255,255,.08);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:8rem 2rem;
+    position:relative;
+}
+
+.container{
+    width:min(1100px,100%);
+}
+
+.small{
+    text-transform:uppercase;
+    letter-spacing:4px;
+    color:var(--accent);
+    font-size:.8rem;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(3rem,8vw,7rem);
+    line-height:1;
+    font-weight:500;
+    text-align:center;
+    max-width:1000px;
+}
+
+.sub{
+    color:var(--muted);
+    margin-top:25px;
+    font-size:1.1rem;
+}
+
+.btn{
+    margin-top:50px;
+    background:var(--text);
+    color:var(--bg);
+    border:none;
+    padding:14px 28px;
+    border-radius:999px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.story{
+    max-width:900px;
+}
+
+.story h2{
+    font-size:clamp(2rem,5vw,5rem);
+    font-weight:500;
+    line-height:1.15;
+}
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:80px;
+    font-size:clamp(2rem,4vw,4rem);
+    text-align:center;
+}
+
+.timeline div{
+    opacity:.6;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    width:100%;
+    margin-top:50px;
+}
+
+.card{
+    border:1px solid var(--border);
+    padding:35px;
+    border-radius:24px;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(212,185,150,.4);
+}
+
+.card span{
+    color:var(--accent);
+    display:block;
+    margin-bottom:15px;
+}
+
+.card h3{
+    font-size:1.5rem;
+    font-weight:500;
+}
+
+.question{
+    text-align:center;
+}
+
+.question h2{
+    font-size:clamp(3rem,8vw,8rem);
+    font-weight:500;
+    margin-bottom:60px;
+}
+
+.buttons{
+    position:relative;
+    width:100%;
+    height:250px;
+}
+
+#yes{
+    position:absolute;
+    left:40%;
+    top:40%;
+    transform:translate(-50%,-50%);
+    background:var(--text);
+    color:var(--bg);
+    border:none;
+    border-radius:999px;
+    padding:18px 42px;
+    cursor:pointer;
+    font-size:1rem;
+    z-index:10;
+}
+
+#no{
+    position:absolute;
+    left:60%;
+    top:40%;
+    transform:translate(-50%,-50%);
+    background:transparent;
+    color:#aaa;
+    border:1px solid var(--border);
+    border-radius:999px;
+    padding:18px 42px;
+    cursor:pointer;
+    transition:left .15s linear, top .15s linear;
+}
+
+.success{
+    display:none;
+    text-align:center;
+}
+
+.success h1{
+    font-size:clamp(4rem,10vw,10rem);
+    font-weight:500;
+}
+
+.success p{
+    color:var(--muted);
+    margin-top:20px;
+}
+
+.letter{
+    max-width:850px;
+    line-height:2;
+    font-size:1.1rem;
+    color:#d0d0d0;
+}
+
+.letter h2{
+    margin-bottom:40px;
+    color:white;
+    font-size:3rem;
+}
+
+.glow{
+    position:fixed;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:radial-gradient(circle,rgba(212,185,150,.08),transparent 70%);
+    pointer-events:none;
+    transform:translate(-50%,-50%);
+    z-index:-1;
+}
+</style>
+
+</head>
+<body>
+
+<div class="glow" id="glow"></div>
+
+<section class="hero">
+    <div class="small">For My Sweetheart.</div>
+
+```
+<h1>
+    Welcome to a small corner of the internet dedicated to the girl who means the world to me.
+</h1>
+
+<p class="sub">
+    — Made with love, for Vishaka ❤️
+</p>
+
+<button class="btn" onclick="document.getElementById('story').scrollIntoView()">
+    Enter                                                
+</button>
+```
+
+</section>
+
+<section id="story">
+    <div class="container story">
+        <div class="small">a thought</div>
+
+```
+    <h2>
+        There are billions of people in the world.
+        Yet somehow, you're still my favorite.
+    </h2>
+</div>
+```
+
+</section>
+
+<section>
+    <div class="timeline">
+        <div>the first conversation</div>
+        <div>the first laugh</div>
+        <div>the first time i realized you were different</div>
+        <div>and every moment after that</div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="small">what i adore about you</div>
+
+```
+    <div class="grid">
+        <div class="card">
+            <span>01</span>
+            <h3>Your Eyes</h3>
+        </div>
+
+        <div class="card">
+            <span>02</span>
+            <h3>Your Smile</h3>
+        </div>
+
+        <div class="card">
+            <span>03</span>
+            <h3>Your Laugh</h3>
+        </div>
+
+        <div class="card">
+            <span>04</span>
+            <h3>Your Energy</h3>
+        </div>
+
+        <div class="card">
+            <span>05</span>
+            <h3>Your Humor</h3>
+        </div>
+
+        <div class="card">
+            <span>06</span>
+            <h3>Your heart</h3>
+        </div>
+    </div>
+</div>
+```
+
+</section>
+
+<section id="proposal">
+    <div class="question">
+        <div class="small">one question</div>
+
+```
+    <h2>
+        Would You Be My Girlfriend?
+    </h2>
+
+    <div class="buttons">
+        <button id="yes">yes</button>
+        <button id="no">no</button>
+    </div>
+</div>
+```
+
+</section>
+
+<section class="success" id="success">
+    <h1>You just made me the happiest person alive, Vishaka.
+</h1>
+
+```
+<p>
+    best decision ever.
+    screenshot this and sent it to me rn so i can know
+</p>
+```
+
+</section>
+
+<section>
+    <div class="letter">
+        <h2>Letter For You</h2>
+
+```
+    <p>
+        My Love,<br><br>
+
+
+Sometimes I sit quietly and think about you, and it amazes me how someone who lives 1,400 kilometers away can feel closer to my heart than anyone standing right beside me.
+        <br><br>
+
+        You make ordinary days feel a little brighter and ordinary
+        moments feel worth remembering.
+        <br><br>
+
+        Every day, I miss you in a hundred different ways. I miss your messages when you're busy, I miss hearing your voice when we haven't talked for a while, and I miss all the moments we haven't had the chance to share yet. But even with all this distance between us, my love for you only grows stronger.
+        <br><br>
+
+        If there is one thing I know for certain, it's that no amount of kilometers can measure what you mean to me. If I had the chance to see you for just ten minutes, I would travel across countries, cross oceans, and spend countless hours on the road without thinking twice. Ten minutes with you would be worth more than days spent anywhere else, because every second with you feels precious.
+        <br><br>
+
+        You are genuinely one of the most beautiful people I have ever known. Not just because of your smile, which could brighten even my darkest day, or your eyes, which I could get lost in forever. Your beauty comes from the way you care, the way you laugh, the way you make me feel understood, and the way your presence can turn an ordinary day into something unforgettable..
+        <br><br>
+
+        There are moments when I wish I could simply reach through the distance and hold your hand. I wish I could be there to see your smile in person, to walk beside you, to watch the sunset with you, or just sit quietly together doing nothing at all. Those simple moments are the ones I dream about most.
+        <br><br>
+
+        You know, out of all the memories we've created together, one shines brighter than the rest. The day you wrote me that love letter. I still remember how I felt reading every word. No one had ever written a love letter to me before. It was the first love letter I had ever received in my entire life, and it came from the person I love the most. That letter wasn't just words on a page—it was a piece of your heart given to me. I will cherish it forever, no matter how much time passes. Whenever life feels difficult, that memory reminds me how lucky I am to have you.
+        <br><br>
+
+        Thank you for loving me despite the distance. Thank you for being patient through the waiting,and all the moments when we wish we could be together. Every day we spend apart is simply one day closer to the moment we finally meet.
+        <br><br>       
+
+        Yours ❤️,<br><br>
+        Rohan
+    </p>
+</div>
+```
+
+</section>
+
+<script>
+const glow = document.getElementById("glow");
+
+document.addEventListener("mousemove",(e)=>{
+    glow.style.left=e.clientX+"px";
+    glow.style.top=e.clientY+"px";
+});
+
+const noBtn = document.getElementById("no");
+
+document.addEventListener("mousemove",(e)=>{
+
+    const rect=noBtn.getBoundingClientRect();
+
+    const centerX=rect.left+rect.width/2;
+    const centerY=rect.top+rect.height/2;
+
+    const dx=centerX-e.clientX;
+    const dy=centerY-e.clientY;
+
+    const distance=Math.sqrt(dx*dx+dy*dy);
+
+    const SAFE_DISTANCE=180;
+
+    if(distance<SAFE_DISTANCE){
+
+        const angle=Math.atan2(dy,dx);
+
+        let newX=
+            e.clientX+
+            Math.cos(angle)*SAFE_DISTANCE;
+
+        let newY=
+            e.clientY+
+            Math.sin(angle)*SAFE_DISTANCE;
+
+        newX=Math.max(
+            50,
+            Math.min(window.innerWidth-120,newX)
+        );
+
+        newY=Math.max(
+            50,
+            Math.min(window.innerHeight-60,newY)
+        );
+
+        noBtn.style.left=newX+"px";
+        noBtn.style.top=newY+"px";
+    }
+});
+
+document.getElementById("yes").addEventListener("click",()=>{
+
+    document.body.style.transition="1s";
+
+    document.getElementById("success").style.display="flex";
+
+    document.getElementById("success").scrollIntoView({
+        behavior:"smooth"
+    });
+});
+</script>
+
+</body>
+</html>
